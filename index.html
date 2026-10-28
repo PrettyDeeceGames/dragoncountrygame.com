@@ -2,18 +2,190 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Dragon Country</title>
 <meta name="description" content="Dragon Country is a cozy dragon-ranching sim.">
-<style>
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:24px;box-sizing:border-box;background:#28303f;color:#fbf1e3;font:20px/1.5 system-ui,sans-serif;text-align:center}
-h1{margin:0;font-size:clamp(36px,7vw,64px)}
-a{display:inline-block;padding:14px 26px;border-radius:12px;background:#f2c14e;color:#40221c;font-weight:800;text-decoration:none}
-</style>
+<meta name="theme-color" content="#28303f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dragon Country">
+<meta property="og:description" content="Dragon Country is a cozy dragon-ranching sim.">
+<meta property="og:url" content="https://dragoncountrygame.com/">
+<meta property="og:image" content="https://dragoncountrygame.com/assets/hero_keyart.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/ostrich_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&family=Pixelify+Sans:wght@500;700&display=swap">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-<h1>Dragon Country</h1>
-<p>Dragon Country is a cozy dragon-ranching sim.</p>
-<a href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist on Steam</a>
+
+<nav aria-label="Main"><div class="wrap">
+  <a class="home" href="https://prettydeecegames.com/"><img src="assets/ostrich_logo.png" alt=""><span>PRETTY DEECE GAMES</span></a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#dragons">Dragons</a>
+    <a href="#gallery">Gallery</a>
+    <a href="https://prettydeecegames.com/blog">Devlog</a>
+    <a class="btn gold" href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist</a>
+  </div>
+</div></nav>
+
+<header id="top">
+  <div class="hero-img"><img src="assets/hero_keyart.jpg" alt="Key art: a rancher resting against a fence at sunset while dragons watch"></div>
+  <div class="pitch"><div class="wrap">
+    <div class="l">
+      <span class="badge">CO-OP · SPLIT-SCREEN + ONLINE · PC</span>
+      <h1>A fresh start, a new home, and more dragons than you can raise.</h1>
+      <p class="sub">Dragon Country is a cozy dragon-ranching sim.</p>
+    </div>
+    <div class="r">
+      <div class="row">
+        <a class="btn gold" href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist on Steam</a>
+        <span class="btn soon">Prequel on itch.io <small>SOON</small></span>
+        <a class="btn line" href="https://discord.gg/8cb3WNX6xS">Join our Discord</a>
+      </div>
+      <div class="award">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14 7 22l5-3 5 3-1.5-8"></path></svg>
+        <span><b>DIY Darling</b> · Indie Mountain West Awards 2026</span>
+      </div>
+    </div>
+  </div></div>
+</header>
+
+<main>
+<!-- Newsletter signup goes here once the Kit form for this site exists. -->
+
+<section id="coop"><div class="wrap">
+  <div class="split">
+    <div class="txt">
+      <h2>Ranching dragons is hard work. Bring your friends!</h2>
+      <p class="body">Play with friends in split-screen and online co-op.</p>
+      <ul class="chips"><li>Solo</li><li>Split-screen co-op</li><li>Online co-op</li></ul>
+    </div>
+    <div class="pic"><img src="assets/coop_loop.webp" alt="Gameplay: a steel-blue axe dragon helping a rancher beside the forge"></div>
+  </div>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <div class="feats">
+    <div class="split">
+      <div class="pic"><img src="assets/feat_raise.webp" alt="Gameplay: a mushroom-capped dragon wandering beside a wooden pen" loading="lazy"></div>
+      <div class="txt">
+        <span class="eyebrow">RAISE</span>
+        <h3>Raise dragons as unique as their domain</h3>
+        <p class="body">Every species looks, behaves and bonds differently. The more you learn about dragons, the stronger your bonds with them grow.</p>
+      </div>
+    </div>
+    <div class="split rev">
+      <div class="txt">
+        <span class="eyebrow">RANCH</span>
+        <h3>Care for your ranch</h3>
+        <p class="body">Tend to your dragons, because happy dragons help you and the community out, and who knows, they might even surprise you and start helping out on the ranch too!</p>
+      </div>
+      <div class="pic"><img src="assets/feat_ranch.webp" alt="Gameplay: feeding a dragon at the ranch as hearts pop up" loading="lazy"></div>
+    </div>
+    <div class="split">
+      <div class="pic"><img src="assets/feat_explore.webp" alt="Gameplay: exploring a red-rock canyon with crystals and desert plants" loading="lazy"></div>
+      <div class="txt">
+        <span class="eyebrow">EXPLORE</span>
+        <h3>Explore dangerous habitats</h3>
+        <p class="body">Each day is a different part of the world. Explore it to find the materials and resources you need to keep your dragons happy and the community running.</p>
+      </div>
+    </div>
+    <div class="split rev">
+      <div class="txt">
+        <span class="eyebrow">ENCOUNTER</span>
+        <h3>Encounter wild dragons</h3>
+        <p class="body">Outside of the ranch, dragons live by their own rules. Worth the risk? Only you will be able to determine that.</p>
+      </div>
+      <div class="pic"><img src="assets/feat_wild.webp" alt="Gameplay: a wild steel-blue dragon tearing through a canyon tree" loading="lazy"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="guide" id="dragons"><div class="wrap">
+  <div>
+    <span class="eyebrow">RESEARCHER FIELD GUIDE</span>
+    <h2>Which dragon are you going to raise first?</h2>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <img src="assets/dragon_axe.jpg" alt="Axe dragon: a steel-blue dragon with an axe-shaped head" loading="lazy">
+      <div class="in">
+        <span class="sp">SPECIES 01 · Biome yet to be discovered</span>
+        <h3>Axe Dragon</h3>
+        <p>Chops trees and breaks rotting logs with its hammer tail looking for grubs.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/dragon_mushroom.jpg" alt="Mushroom dragon: a dragon with a broad mushroom cap beside a pen" loading="lazy">
+      <div class="in">
+        <span class="sp">SPECIES 02 · Biome yet to be discovered</span>
+        <h3>Mushroom Dragon</h3>
+        <p>This dragon has yet to be observed in the wild. Additional notes needed. Please see the Researcher for more information.</p>
+      </div>
+    </article>
+    <article class="card egg">
+      <div class="ph"><svg width="96" height="120" viewBox="0 0 48 60" fill="none" stroke="#c39874" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 3C13 3 5 22 5 36c0 12 8.5 21 19 21s19-9 19-21C43 22 35 3 24 3Z"></path><path d="m15 30 5 4 4-5 4 5 5-4"></path></svg></div>
+      <div class="in">
+        <span class="sp">SPECIES 03 · ???</span>
+        <h3>It's about to hatch!</h3>
+        <p>Discord members hear about new species first.</p>
+      </div>
+    </article>
+    <article class="card egg">
+      <div class="ph"><svg width="96" height="120" viewBox="0 0 48 60" fill="none" stroke="#c39874" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 3C13 3 5 22 5 36c0 12 8.5 21 19 21s19-9 19-21C43 22 35 3 24 3Z"></path><path d="m15 30 5 4 4-5 4 5 5-4"></path></svg></div>
+      <div class="in">
+        <span class="sp">SPECIES 04 · ???</span>
+        <h3>Egg not found...</h3>
+        <p>We're out looking for its egg, what do you think we'll find?</p>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Around the ranch</h2>
+  <div class="gal">
+    <img src="assets/gal1.jpg" alt="The ranch with forges, eggs and young dragons on red dirt" loading="lazy">
+    <img src="assets/gal2.jpg" alt="A fenced dragon pen beside the canyon" loading="lazy">
+    <img src="assets/gal3.jpg" alt="A rancher walking through tall wildflowers next to a boulder" loading="lazy">
+    <img src="assets/gal4.jpg" alt="A steel-blue dragon among crystals on a canyon ledge" loading="lazy">
+    <img src="assets/gal5.jpg" alt="A dragon standing over the ranch forge" loading="lazy">
+    <img src="assets/gal6.jpg" alt="A rancher in a dusky grove with hanging vines" loading="lazy">
+  </div>
+</div></section>
+
+<section class="studio" id="studio"><div class="wrap">
+  <div class="l">
+    <img src="assets/ostrich_logo.png" alt="Pretty Deece Games ostrich logo">
+    <div>
+      <h2>Pretty Deece Games</h2>
+      <p>Idaho Based Indie Game Studio</p>
+      <p>We're a group of friends building games on nights and weekends. We hope you'll connect with them and enjoy them as much as we enjoy making them.</p>
+      <a href="https://prettydeecegames.com/blog" style="font-weight:800">Read the devlog</a>
+    </div>
+  </div>
+  <div class="r">
+    <h3>PRESS &amp; CREATORS</h3>
+    <span class="press">Press kit <small>COMING SOON</small></span>
+    <span style="color:var(--peach)">Contact: <a href="mailto:info@prettydeecegames.com" style="color:var(--ink);font-weight:800">info@prettydeecegames.com</a></span>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="https://store.steampowered.com/app/4455310/Dragon_Country/">Steam</a>
+    <a href="https://discord.gg/8cb3WNX6xS">Discord</a>
+    <a href="https://www.tiktok.com/@pretty.deece.game">TikTok</a>
+    <a href="https://www.instagram.com/prettydeecegames/">Instagram</a>
+    <a href="https://www.youtube.com/@PrettyDeeceGames">YouTube</a>
+    <a href="https://x.com/PrettyDeeceGame">X</a>
+  </div>
+  <span class="legal">© 2026 Pretty Deece Games LLC · Idaho</span>
+</div></footer>
+
 </body>
 </html>
