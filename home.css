@@ -135,14 +135,6 @@ figcaption{font-family:var(--fell);font-style:italic;font-size:15px;color:var(--
 .facts dd{margin:0;font-family:var(--fell);font-style:italic;font-size:17px}
 .sig{align-self:flex-end;font-family:var(--hand);font-size:26px;color:#4a2f1e;transform:rotate(-3deg)}
 
-/* Loose slips (eggs) */
-.loose{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px}
-.slip{display:flex;gap:18px;align-items:center;background:var(--brown);color:var(--ink);border-radius:12px;padding:18px 22px;box-shadow:0 6px 0 var(--deep)}
-.slip svg{color:#c39874;flex:none}
-.slip .sp{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--gold)}
-.slip h3{font-size:24px}
-.slip p{font-size:16px;line-height:1.5;color:var(--peach)}
-
 /* Review tags for placeholder text (remove before merge) */
 .ph-tag{display:inline-block;margin:0 8px 4px 0;font-family:var(--mono);font-style:normal;font-size:11px;letter-spacing:.06em;line-height:1;vertical-align:middle;background:#2f6f8f;color:#fff;padding:4px 6px;border-radius:4px;cursor:help}
 .entry .ph-tag{align-self:flex-start;margin:0}
