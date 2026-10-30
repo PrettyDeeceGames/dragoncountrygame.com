@@ -115,11 +115,9 @@ figcaption{font-family:var(--fell);font-style:italic;font-size:15px;color:var(--
 .print::before,.print::after{content:"";position:absolute;width:30px;height:30px;background:linear-gradient(135deg,#2b211b 50%,transparent 50%)}
 .print::before{top:-4px;left:-4px}
 .print::after{bottom:-4px;right:-4px;transform:rotate(180deg)}
-.margin-note{position:absolute;font-family:var(--hand);font-size:22px;color:#5a3c26;line-height:1.1;transform:rotate(-6deg)}
-.margin-note.n1{left:42px;bottom:28px}
-.margin-note.n2{left:42px;bottom:28px}
+.margin-note{margin:28px 0 0 6px;max-width:85%;font-family:var(--hand);font-size:22px;color:#5a3c26;line-height:1.15;transform:rotate(-6deg)}
 .stamp{margin-top:28px;align-self:center;font-family:var(--fell-sc);font-size:26px;letter-spacing:.14em;color:#8a2f1d;border:3px double #8a2f1d;padding:4px 16px;transform:rotate(-8deg);opacity:.8}
-@media (max-width:860px){.margin-note{position:static;margin-top:16px}.print{margin-top:10px}}
+@media (max-width:860px){.margin-note{margin-top:16px}.print{margin-top:10px}}
 
 /* Notes page */
 .notes{display:flex;flex-direction:column;gap:18px}
