@@ -2,18 +2,314 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Dragon Country</title>
 <meta name="description" content="Dragon Country is a cozy dragon-ranching sim.">
-<style>
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:24px;box-sizing:border-box;background:#28303f;color:#fbf1e3;font:20px/1.5 system-ui,sans-serif;text-align:center}
-h1{margin:0;font-size:clamp(36px,7vw,64px)}
-a{display:inline-block;padding:14px 26px;border-radius:12px;background:#f2c14e;color:#40221c;font-weight:800;text-decoration:none}
-</style>
+<meta name="theme-color" content="#28303f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dragon Country">
+<meta property="og:description" content="Dragon Country is a cozy dragon-ranching sim.">
+<meta property="og:url" content="https://dragoncountrygame.com/">
+<meta property="og:image" content="https://dragoncountrygame.com/assets/hero_keyart.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/ostrich_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=La+Belle+Aurore&family=Lilita+One&family=Nunito:wght@400;600;800&family=Pixelify+Sans:wght@500;700&display=swap">
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-<h1>Dragon Country</h1>
-<p>Dragon Country is a cozy dragon-ranching sim.</p>
-<a href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist on Steam</a>
+
+<nav aria-label="Main"><div class="wrap">
+  <a class="home" href="https://prettydeecegames.com/"><img src="assets/ostrich_logo.png" alt=""><span>PRETTY DEECE GAMES</span></a>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#dragons">Dragons</a>
+    <a href="#gallery">Gallery</a>
+    <a href="https://prettydeecegames.com/blog">Devlog</a>
+    <a class="btn gold" href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist</a>
+  </div>
+</div></nav>
+
+<header id="top">
+  <div class="hero-img"><img src="assets/hero_keyart.jpg" alt="Key art: a rancher resting against a fence at sunset while dragons watch"></div>
+  <div class="pitch"><div class="wrap">
+    <div class="l">
+      <span class="badge">CO-OP · SPLIT-SCREEN + ONLINE · PC</span>
+      <h1>A fresh start, a new home, and more dragons than you can raise.</h1>
+      <p class="sub">Dragon Country is a cozy dragon-ranching sim.</p>
+    </div>
+    <div class="r">
+      <div class="row">
+        <a class="btn gold" href="https://store.steampowered.com/app/4455310/Dragon_Country/">Wishlist on Steam</a>
+        <span class="btn soon">Prequel on itch.io <small>SOON</small></span>
+        <a class="btn line" href="https://discord.gg/8cb3WNX6xS">Join our Discord</a>
+      </div>
+      <div class="award">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14 7 22l5-3 5 3-1.5-8"></path></svg>
+        <span><b>DIY Darling</b> · Indie Mountain West Awards 2026</span>
+      </div>
+    </div>
+  </div></div>
+</header>
+
+<main>
+<section class="news" id="newsletter"><div class="wrap">
+  <h2>Come along for the ride! We'll keep you updated with news, celebrations, and updates.</h2>
+  <form action="https://app.kit.com/forms/10110802/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="10110802" data-uid="fafc9f1762" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;}},&quot;version&quot;:&quot;5&quot;}">
+    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+    <div class="formkit-fields" data-element="fields">
+      <input class="formkit-input" name="email_address" aria-label="Email address" placeholder="Email Address" required type="email" autocomplete="email">
+      <button class="formkit-submit btn gold" data-element="submit" type="submit"><span class="formkit-spinner"><span></span><span></span><span></span></span><span>Subscribe</span></button>
+    </div>
+    <a class="kit-credit" href="https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic" rel="nofollow noopener" target="_blank">Built with Kit</a>
+  </form>
+</div></section>
+
+<section id="coop"><div class="wrap">
+  <div class="split">
+    <div class="txt">
+      <h2>Ranching dragons is hard work. Bring your friends!</h2>
+      <p class="body">Play with friends in split-screen and online co-op.</p>
+      <ul class="chips"><li>Solo</li><li>Split-screen co-op</li><li>Online co-op</li></ul>
+    </div>
+    <div class="pic"><img src="assets/coop_loop.webp" alt="Gameplay: a steel-blue axe dragon helping a rancher beside the forge"></div>
+  </div>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <div class="feats">
+    <div class="split">
+      <div class="pic"><img src="assets/feat_raise.webp" alt="Gameplay: a mushroom-capped dragon wandering beside a wooden pen" loading="lazy"></div>
+      <div class="txt">
+        <span class="eyebrow">RAISE</span>
+        <h3>Raise dragons as unique as their domain</h3>
+        <p class="body">Every species looks, behaves and bonds differently. The more you learn about dragons, the stronger your bonds with them grow.</p>
+      </div>
+    </div>
+    <div class="split rev">
+      <div class="txt">
+        <span class="eyebrow">RANCH</span>
+        <h3>Care for your ranch</h3>
+        <p class="body">Tend to your dragons, because happy dragons help you and the community out, and who knows, they might even surprise you and start helping out on the ranch too!</p>
+      </div>
+      <div class="pic"><img src="assets/feat_ranch.webp" alt="Gameplay: feeding a dragon at the ranch as hearts pop up" loading="lazy"></div>
+    </div>
+    <div class="split">
+      <div class="pic"><img src="assets/feat_explore.webp" alt="Gameplay: exploring a red-rock canyon with crystals and desert plants" loading="lazy"></div>
+      <div class="txt">
+        <span class="eyebrow">EXPLORE</span>
+        <h3>Explore dangerous habitats</h3>
+        <p class="body">Each day is a different part of the world. Explore it to find the materials and resources you need to keep your dragons happy and the community running.</p>
+      </div>
+    </div>
+    <div class="split rev">
+      <div class="txt">
+        <span class="eyebrow">ENCOUNTER</span>
+        <h3>Encounter wild dragons</h3>
+        <p class="body">Outside of the ranch, dragons live by their own rules. Worth the risk? Only you will be able to determine that.</p>
+      </div>
+      <div class="pic"><img src="assets/feat_wild.webp" alt="Gameplay: a wild steel-blue dragon tearing through a canyon tree" loading="lazy"></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="guide" id="dragons"><div class="wrap">
+  <div class="guide-head">
+    <span class="eyebrow">RESEARCHER FIELD GUIDE</span>
+    <h2>Which dragon will you encounter first?</h2>
+  </div>
+
+  <div class="journal" data-journal>
+    <div class="tabs" role="tablist" aria-label="Field guide entries">
+      <button role="tab" id="t-axe" aria-controls="p-axe" aria-selected="true">Axe Dragon</button>
+      <button role="tab" id="t-mush" aria-controls="p-mush" aria-selected="false" tabindex="-1">Mushroom Dragon</button>
+      <button role="tab" id="t-sand" aria-controls="p-sand" aria-selected="false" tabindex="-1">Sand Swimmer</button>
+      <button role="tab" id="t-lily" aria-controls="p-lily" aria-selected="false" tabindex="-1">Lilypad</button>
+    </div>
+
+
+    <article class="spread" role="tabpanel" id="p-axe" aria-labelledby="t-axe">
+      <div class="page figs">
+        <figure class="sketch big">
+          <img src="assets/guide/sketch_axe.png" alt="Pencil sketch of the Axe Dragon" loading="lazy">
+          <figcaption>fig. 1 · studies, drawn from encounters near camp.</figcaption>
+        </figure>
+        <figure class="print">
+          <img src="assets/guide/photo_axe_wild.jpg" alt="Old sepia photograph of the Axe Dragon" loading="lazy">
+          <figcaption>fig. 2 · photograph, near camp</figcaption>
+        </figure>
+        <p class="margin-note n1" aria-hidden="true">listen for loud chopping or knocking.</p>
+      </div>
+      <div class="page notes">
+        <header>
+          <span class="no">No. 01</span>
+          <h3>Axe Dragon</h3>
+          <span class="latin"><i>Securis caput</i></span>
+        </header>
+        <div class="entry">
+          
+          <p>I first heard sign of this dragon from camp in the early morning; a loud whacking noise echoed through the canyon from a small grove of trees nearby. I climbed a rock to spy on the creature. The noise was its head, shaped exactly like a sharpened axe, widely swinging and connecting with the trunk of a mature Joshua tree. I watched long enough for it to fell the tree and begin chewing at the base. It seems to have found grubs burrowed inside, but it eats much of the tree in the process. It may be adapted to digest the tree wood and grub meat together.</p>
+          <p>It is perceptive and territorial. I was hastily chased away after it noticed me nearby. Fortunately it did not appear to have any means of breath attack, though it did fling some rocks toward me as I fled.</p>
+          <p>I caught sight of a dragon of this same species with an egg. It used the end of its tail to tap on the egg with a distinct pattern, repeating it many times. I can only guess about why it does this.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Habitat</dt><dd>Wooded areas</dd></div>
+          <div><dt>Eats</dt><dd>Grubs, from rotting logs</dd></div>
+        </dl>
+        <p class="sig">M. Mantissa</p>
+      </div>
+    </article>
+    <article class="spread" role="tabpanel" id="p-mush" aria-labelledby="t-mush" hidden>
+      <div class="page figs">
+        <figure class="sketch big">
+          <img src="assets/guide/sketch_mushroom.png" alt="Pencil sketch of the Mushroom Dragon" loading="lazy">
+          <figcaption>fig. 1 · quick sketch after recovering</figcaption>
+        </figure>
+        <figure class="print alt">
+          <img src="assets/guide/photo_mushroom_wild.jpg" alt="Old sepia photograph of the Mushroom Dragon" loading="lazy">
+          <figcaption>fig. 2 · photograph, by the canyon wall</figcaption>
+        </figure>
+        <p class="margin-note n1" aria-hidden="true">How does it eat?</p>
+      </div>
+      <div class="page notes">
+        <header>
+          <span class="no">No. 02</span>
+          <h3>Mushroom Dragon</h3>
+          <span class="latin"><i>Draco fungorum</i></span>
+        </header>
+        <div class="entry">
+          
+          <p>In a rather unpleasant first meeting, I happened upon this dragon while traveling back to camp in the evening. It stood perfectly still. I had assumed it to be some oversized fungi influenced by the ecology of the dragon wilds. Reaching out to touch it was my mistake. It reacted with a violent cloud of pungent dust. The coughing lasted a few days, but I eventually recovered.</p>
+          <p>I take careful attention to these creatures now. They are rarely hostile, and move in short, deliberate strides.</p>
+          <p>What they eat remains a mystery to me. Given their form, perhaps their nutrition comes from what they stand on.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Habitat</dt><dd>Multiple</dd></div>
+          <div><dt>Eats</dt><dd>Undetermined</dd></div>
+        </dl>
+        <p class="sig">M. Mantissa</p>
+      </div>
+    </article>
+    <article class="spread" role="tabpanel" id="p-sand" aria-labelledby="t-sand" hidden>
+      <div class="page figs">
+        <figure class="sketch big">
+          <img src="assets/guide/sketch_sand_sheet.png" alt="Pencil sketch of the Sand Swimmer" loading="lazy">
+          <figcaption>fig. 1 · drawn from a partial glance.</figcaption>
+        </figure>
+        <figure class="sketch small">
+          <img src="assets/guide/sketch_sand_eyes.png" alt="Second pencil sketch of the Sand Swimmer" loading="lazy">
+          <figcaption>fig. 2 · Only its eyes and snout above the sand.</figcaption>
+        </figure>
+        <p class="margin-note n1" aria-hidden="true">Dangerous?</p>
+      </div>
+      <div class="page notes">
+        <header>
+          <span class="no">No. 03</span>
+          <h3>Sand Swimmer</h3>
+          <span class="latin"><i>Harenae natatorus</i></span>
+        </header>
+        <div class="entry">
+          
+          <p>My only sight of this species so far was while I was hiking, looking down into a canyon at a windswept sandy dune that was nestled up against the canyon wall. Just before I turned to leave, I noticed some movement out of the corner of my eye. I saw two large eyes moving about the top of the sand. Whatever was underneath seemed to move around in it like it was wading in water. After a moment, its head sank, disappearing from view.</p>
+          <p>I waited and waited, watching to see if the dragon would reveal itself. As it got dark, our camp ranger urged me to return. Just before I was dragged away, I threw a rock over to the dune to see if I could get the dragon to react. It leapt from the sand, caught the rock in its mouth, and dove under again. It had been ready that entire time. If only my colleagues were similarly patient.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Habitat</dt><dd>Sand</dd></div>
+          <div><dt>Eats</dt><dd>Unknown</dd></div>
+        </dl>
+        <p class="sig">M. Mantissa</p>
+      </div>
+    </article>
+    <article class="spread" role="tabpanel" id="p-lily" aria-labelledby="t-lily" hidden>
+      <div class="page figs">
+        <figure class="sketch big">
+          <img src="assets/guide/sketch_lilypad_pond.png" alt="Pencil sketch of the Lilypad Dragon" loading="lazy">
+          <figcaption>fig. 1 · young version? Note the missing flower</figcaption>
+        </figure>
+        <figure class="sketch small">
+          <img src="assets/guide/sketch_lilypad.png" alt="Second pencil sketch of the Lilypad Dragon" loading="lazy">
+          <figcaption>fig. 2 · Same pond, larger, big flower</figcaption>
+        </figure>
+        <p class="margin-note n1" aria-hidden="true">Seems docile</p>
+      </div>
+      <div class="page notes">
+        <header>
+          <span class="no">No. 04</span>
+          <h3>Lilypad Dragon</h3>
+          <span class="latin"><i>Draco nymphaea</i></span>
+        </header>
+        <div class="entry">
+          
+          <p>My first encounter with this species was early in the morning, the sun barely rising from behind the horizon. As I collected samples of water and soil from a nearby lake, giant lily pads began to sway and shift, reacting to the sunlight. I watched motionless as several heads breached the water, the lily pads being dragged with their bodies as they swam around the lake.</p>
+          <p>They seem to have some symbiotic relationship with the plant life growing on them, with a rare few sporting large flowers as well. Could it be possible that they are born with them?</p>
+          <p>It&#x27;s not clear what their diet is. Whatever they eat seems to be consumed as they are underwater. I will need to find a way to get a closer look, but safely. Attempts to approach the dragons caused them to shoot highly pressurized beams of water toward me. I was lucky to avoid their attack, but they did manage to ruin the original notebook detailing their behavior. A frustrating setback.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Habitat</dt><dd>Ponds/Water - Near lily pads</dd></div>
+          <div><dt>Eats</dt><dd>Undetermined</dd></div>
+        </dl>
+        <p class="sig">M. Mantissa</p>
+      </div>
+    </article>
+  </div>
+</div></section>
+<script>
+(function(){
+  var j=document.querySelector('[data-journal]'); if(!j) return;
+  var tabs=[].slice.call(j.querySelectorAll('[role=tab]'));
+  function show(t){
+    tabs.forEach(function(b){var on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on;});
+  }
+  tabs.forEach(function(b,i){
+    b.addEventListener('click',function(){show(b);});
+    b.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!k)return;var n=tabs[(i+k+tabs.length)%tabs.length];show(n);n.focus();});
+  });
+})();
+</script>
+
+<section id="gallery"><div class="wrap">
+  <h2>Around the ranch</h2>
+  <div class="gal">
+    <img src="assets/gal1.jpg" alt="The ranch with forges, eggs and young dragons on red dirt" loading="lazy">
+    <img src="assets/gal2.jpg" alt="A fenced dragon pen beside the canyon" loading="lazy">
+    <img src="assets/gal3.jpg" alt="A rancher walking through tall wildflowers next to a boulder" loading="lazy">
+    <img src="assets/gal4.jpg" alt="A steel-blue dragon among crystals on a canyon ledge" loading="lazy">
+    <img src="assets/gal5.jpg" alt="A dragon standing over the ranch forge" loading="lazy">
+    <img src="assets/gal6.jpg" alt="A rancher in a dusky grove with hanging vines" loading="lazy">
+  </div>
+</div></section>
+
+<section class="studio" id="studio"><div class="wrap">
+  <div class="l">
+    <img src="assets/ostrich_logo.png" alt="Pretty Deece Games ostrich logo">
+    <div>
+      <h2>Pretty Deece Games</h2>
+      <p>Idaho Based Indie Game Studio</p>
+      <p>We're a group of friends building games on nights and weekends. It's our hope you'll connect with our games and enjoy them as much as we enjoy making them.</p>
+      <a href="https://prettydeecegames.com/blog" style="font-weight:800">Read the devlog</a>
+    </div>
+  </div>
+  <div class="r">
+    <h3>PRESS &amp; CREATORS</h3>
+    <span class="press">Press kit <small>COMING SOON</small></span>
+    <span style="color:var(--peach)">Contact: <a href="mailto:info@prettydeecegames.com" style="color:var(--ink);font-weight:800">info@prettydeecegames.com</a></span>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="links">
+    <a href="https://store.steampowered.com/app/4455310/Dragon_Country/">Steam</a>
+    <a href="https://discord.gg/8cb3WNX6xS">Discord</a>
+    <a href="https://www.tiktok.com/@pretty.deece.game">TikTok</a>
+    <a href="https://www.instagram.com/prettydeecegames/">Instagram</a>
+    <a href="https://www.youtube.com/@PrettyDeeceGames">YouTube</a>
+    <a href="https://x.com/PrettyDeeceGame">X</a>
+  </div>
+  <span class="legal">© 2026 Pretty Deece Games LLC · Idaho</span>
+</div></footer>
+
+<script src="https://f.convertkit.com/ckjs/ck.5.js" async></script>
 </body>
 </html>
