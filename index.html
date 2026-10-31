@@ -73,14 +73,14 @@
       <p class="body">Play with friends in split-screen and online co-op.</p>
       <ul class="chips"><li>Solo</li><li>Split-screen co-op</li><li>Online co-op</li></ul>
     </div>
-    <div class="pic"><img src="assets/coop_loop.webp" alt="Gameplay: a steel-blue axe dragon helping a rancher beside the forge"></div>
+    <div class="pic"><video class="loop" muted loop playsinline preload="none" poster="assets/coop_loop.jpg" aria-label="Gameplay: a steel-blue axe dragon helping a rancher beside the forge"><source src="assets/coop_loop.mp4" type="video/mp4"></video></div>
   </div>
 </div></section>
 
 <section id="features"><div class="wrap">
   <div class="feats">
     <div class="split">
-      <div class="pic"><img src="assets/feat_raise.webp" alt="Gameplay: a mushroom-capped dragon wandering beside a wooden pen" loading="lazy"></div>
+      <div class="pic"><video class="loop" muted loop playsinline preload="none" poster="assets/feat_raise.jpg" aria-label="Gameplay: a mushroom-capped dragon wandering beside a wooden pen"><source src="assets/feat_raise.mp4" type="video/mp4"></video></div>
       <div class="txt">
         <span class="eyebrow">RAISE</span>
         <h3>Raise dragons as unique as their domain</h3>
@@ -93,10 +93,10 @@
         <h3>Care for your ranch</h3>
         <p class="body">Tend to your dragons, because happy dragons help you and the community out, and who knows, they might even surprise you and start helping out on the ranch too!</p>
       </div>
-      <div class="pic"><img src="assets/feat_ranch.webp" alt="Gameplay: feeding a dragon at the ranch as hearts pop up" loading="lazy"></div>
+      <div class="pic"><video class="loop" muted loop playsinline preload="none" poster="assets/feat_ranch.jpg" aria-label="Gameplay: feeding a dragon at the ranch as hearts pop up"><source src="assets/feat_ranch.mp4" type="video/mp4"></video></div>
     </div>
     <div class="split">
-      <div class="pic"><img src="assets/feat_explore.webp" alt="Gameplay: exploring a red-rock canyon with crystals and desert plants" loading="lazy"></div>
+      <div class="pic"><video class="loop" muted loop playsinline preload="none" poster="assets/feat_explore.jpg" aria-label="Gameplay: exploring a red-rock canyon with crystals and desert plants"><source src="assets/feat_explore.mp4" type="video/mp4"></video></div>
       <div class="txt">
         <span class="eyebrow">EXPLORE</span>
         <h3>Explore dangerous habitats</h3>
@@ -109,7 +109,7 @@
         <h3>Encounter wild dragons</h3>
         <p class="body">Outside of the ranch, dragons live by their own rules. Worth the risk? Only you will be able to determine that.</p>
       </div>
-      <div class="pic"><img src="assets/feat_wild.webp" alt="Gameplay: a wild steel-blue dragon tearing through a canyon tree" loading="lazy"></div>
+      <div class="pic"><video class="loop" muted loop playsinline preload="none" poster="assets/feat_wild.jpg" aria-label="Gameplay: a wild steel-blue dragon tearing through a canyon tree"><source src="assets/feat_wild.mp4" type="video/mp4"></video></div>
     </div>
   </div>
 </div></section>
@@ -297,6 +297,23 @@
   </div>
 </div></section>
 </main>
+<script>
+(function(){
+  var vids=[].slice.call(document.querySelectorAll('video.loop'));
+  if(!vids.length) return;
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(still||!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var v=e.target;
+      if(e.isIntersecting){v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){});}
+      else v.pause();
+    });
+  },{rootMargin:'200px 0px'});
+  vids.forEach(function(v){io.observe(v);});
+})();
+</script>
+
 
 <footer><div class="wrap">
   <div class="links">
